@@ -86,3 +86,7 @@ h1 {
     color: #868e96;
     text-decoration: line-through;
 }
+button:focus-visible {
+    outline: 3px solid #1c7ed6;
+    outline-offset: 2px;
+}
