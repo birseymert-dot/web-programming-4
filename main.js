@@ -27,6 +27,7 @@ function renderTasks() {
 
         const toggleBtn = document.createElement("button");
         toggleBtn.textContent = "Toggle";
+        toggleBtn.setAttribute("aria-label", `Toggle completion for ${task.title}`);
         toggleBtn.addEventListener("click", () => {
             taskManager.toggleTask(task.id);
             renderTasks();
