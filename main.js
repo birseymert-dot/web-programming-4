@@ -35,6 +35,7 @@ function renderTasks() {
 
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
+        deleteBtn.setAttribute("aria-label", `Delete ${task.title}`);
         deleteBtn.addEventListener("click", () => {
             taskManager.removeTask(task.id);
             renderTasks();
