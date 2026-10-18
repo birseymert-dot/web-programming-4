@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task Dashboard</h1>
+
+    <button id="loadTasksBtn">Load Tasks</button>
+    <p id="statusMessage"></p>
+    <div id="taskList"></div>
+
+    <!-- Order matters: classes first, then the API, then the code that uses both -->
+    <script src="taskManager.js"></script>
+    <script src="api.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

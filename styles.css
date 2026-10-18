@@ -1,0 +1,88 @@
+/* ---------- Base layout ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 0 16px;
+    color: #222;
+    background-color: #f5f6fa;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* ---------- Load button and status message ---------- */
+#loadTasksBtn {
+    display: block;
+    margin: 0 auto 12px;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3b5bdb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#loadTasksBtn:hover {
+    background-color: #2f4ac0;
+}
+
+#loadTasksBtn:disabled {
+    background-color: #9aa5d8;
+    cursor: not-allowed;
+}
+
+#statusMessage {
+    min-height: 1.4em;
+    text-align: center;
+    color: #555;
+}
+
+#statusMessage.error {
+    color: #c92a2a;
+}
+
+/* ---------- Task rows ---------- */
+.task {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    background-color: #fff;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+}
+
+.task span {
+    flex: 1;
+}
+
+.task button {
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #fafafa;
+    border: 1px solid #b2b5bd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task button:hover {
+    background-color: #eceef3;
+}
+
+/* ---------- Completed tasks ---------- */
+.task.completed {
+    background-color: #f1f3f5;
+}
+
+.task.completed span {
+    color: #868e96;
+    text-decoration: line-through;
+}
